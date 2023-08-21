@@ -1,0 +1,7 @@
+require('configs/goldenview-config')
+require('configs/harpoon-config')
+require('configs/neoshort-config')
+require('configs/neovim-config')
+require('configs/telescopeui-config')
+require('configs/treesitter-config')
+require('configs/undotree-config')
