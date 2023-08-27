@@ -25,6 +25,7 @@ vim.opt.smartcase = true
 vim.opt.autoindent = true
 vim.opt.relativenumber = true
 vim.opt.number = true
+vim.opt.autoread = true
 
 -- Indentation settings
 vim.opt.tabstop = 4
@@ -51,4 +52,8 @@ endfunction
 
 vim.api.nvim_exec([[
     autocmd VimEnter * nested call RestoreSession() 
+]], false)
+
+vim.api.nvim_exec([[
+    au FocusGained,BufEnter * :checktime
 ]], false)

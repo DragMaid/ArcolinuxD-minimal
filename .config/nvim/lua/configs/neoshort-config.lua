@@ -53,5 +53,7 @@ endfunc
 ]], false)
 vim.keymap.set("n", "<tab>", "<cmd>call undotree#UndotreeFocus()<CR>")
 
+vim.keymap.set("n", "<F1>", function() CppCompile() end)
+
 -- Vim surround plugin keybinds
 -- cs"' , yssb , yss[ , ds", cst"
